@@ -4,7 +4,8 @@ conf();
 
 const _config={
   port:process.env.PORT,
-  mongodbURL:process.env.MONGODB_URI
+  mongodbURL:process.env.MONGODB_URI,
+  env:process.env.NODE_ENV
 }
 
 export const config=Object.freeze(_config);
